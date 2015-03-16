@@ -1,15 +1,15 @@
 # Верстка «лендинг» шаблона Halcyon Days
 
-[Репозиторий проекта](https://github.com/oozywaters/Halcyon)
+[Репозиторий проекта](https://github.com/oozywaters/Halcyon) | [Демо](http://104.236.43.137/halcyon/index.html)
 
-[Демо](http://104.236.43.137/halcyon/index.html)
+Автор проект: [oozywaters](https://github.com/oozywaters )
 
 Ревьювер: [Дмитрий Белицкий](https://ru.bem.info/authors/belitsky-dmitry/ )
 
 Автор хорошо разобрался с синтаксисом BEMHTML, BEMJSON. Научился использовать i-bem.js. Задача сверстать страницу в BEMJSON и использовать, по-возможности, сторонние библиотеки  — решена успешно.
 Для оптимизации можно посоветовать использовать bower для установки библиотек и инлайнинг js-файлов с помощью `borschik`'а. С дальнейшей минимизацией собранных файлов перед продакшеном.
- 
-Как это сделать? Воспользуемся возможностью вставлять файлы — [Нотация для js-include ](https://ru.bem.info/tools/optimizers/borschik/js-include/). Добавим `борщик` для обработки js-файлов в `development` окружении. Для этого отредактируем `.enb/make.js`, раскомментируем [строку с борщиком](https://github.com/oozywaters/Halcyon/blob/master/.enb/make.js#L151) и [закомментируем предыдущую](https://github.com/oozywaters/Halcyon/blob/master/.enb/make.js#L150). 
+
+Как это сделать? Воспользуемся возможностью вставлять файлы — [Нотация для js-include ](https://ru.bem.info/tools/optimizers/borschik/js-include/). Добавим `борщик` для обработки js-файлов в `development` окружении. Для этого отредактируем `.enb/make.js`, раскомментируем [строку с борщиком](https://github.com/oozywaters/Halcyon/blob/master/.enb/make.js#L151) и [закомментируем предыдущую](https://github.com/oozywaters/Halcyon/blob/master/.enb/make.js#L150).
 
 После этого поменяем вставленный код модуля на комментарий для борщика:
 
@@ -36,7 +36,7 @@ modules.define('flexslider', ['jquery'], function(provide, $) {
 modules.define('waypoints', ['jquery'], function(provide, $) {
 
   window.jQuery = window.$ = $;
-  
+
   /*borschik:include:../../libs/waypoints/lib/jquery.waypoints.js*/
 
   provide($);
@@ -62,8 +62,8 @@ block('page')(
 
 Для дальнейшего обучения полезной задачей может стать та же страница, но уже на основе своих решений или решений, созданных БЭМ-сообществом, вместо `bootstrap` и jQuery-плагинов.
 
-Например 
+Например
   * [bem-grid](http://verybigman.github.io/bem-grid/promo.pages/index/index.html) для для создания модульной сетки
   * [bem-components](https://ru.bem.info/libs/bem-components/) — как основа для любых контролов на странице
 
-Следует стремиться к максимально простому BEMJSON, описывающему верхнеуровнемыми блоками-компонентами, интерфейс. В нем не должно быть информации, относящейся к внешнему виду блоков, их поведению. Для этого есть BEMHTML-шаблоны, JavaScript, CSS. Эти блоки, при условии независимости, можно будет эффективно реиспользовать в дальнейших проектах. Что сократит время на разработку, освободив его для дальнейших поисков наилучшей методологии. 
+Следует стремиться к максимально простому BEMJSON, описывающему верхнеуровнемыми блоками-компонентами, интерфейс. В нем не должно быть информации, относящейся к внешнему виду блоков, их поведению. Для этого есть BEMHTML-шаблоны, JavaScript, CSS. Эти блоки, при условии независимости, можно будет эффективно реиспользовать в дальнейших проектах. Что сократит время на разработку, освободив его для дальнейших поисков наилучшей методологии.

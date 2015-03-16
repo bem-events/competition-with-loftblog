@@ -1,8 +1,8 @@
 # Набор карточек в стиле гуглового «material» дизайн
 
-[Репозиторий проекта](https://github.com/phamap/bem-card-world)
+[Репозиторий проекта](https://github.com/phamap/bem-card-world) | [Демо](http://phamap.github.io/bem-card-world/)
 
-[Демо](http://phamap.github.io/bem-card-world/)
+Автор проект: [phamap](https://github.com/phamap )
 
 Ревьювер: [Гела Константинова](https://ru.bem.info/authors/konstantinova-gela/ )
 
@@ -85,7 +85,7 @@ https://github.com/phamap/bem-card-world/blob/master/common.blocks/dots/dots.sty
 
 https://github.com/phamap/bem-card-world/blob/master/common.blocks/card-aside/card-aside.styl - логичней бы было вынести эти стили в модификатор `card-aside_direct_left` и сделать наравне с `card-aside_direct_right`.
 
-https://github.com/phamap/bem-card-world/blob/master/common.blocks/clearfix/clearfix.styl - лучше придерживаться одного написания всех стилей в stylus. 
+https://github.com/phamap/bem-card-world/blob/master/common.blocks/clearfix/clearfix.styl - лучше придерживаться одного написания всех стилей в stylus.
 
 https://github.com/phamap/bem-card-world/blob/master/common.blocks/header/__nameplate/header__nameplate.styl - неиспользуемый элемент.
 

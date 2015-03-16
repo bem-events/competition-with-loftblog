@@ -1,8 +1,8 @@
 # Альтернативный вариант главной страницы bem.info в виде «лендинга»
 
-[Репозиторий проекта](https://github.com/1vank1n/bem-landing)
+[Репозиторий проекта](https://github.com/1vank1n/bem-landing) | [Демо](https://1vank1n.github.io/bem-landing/ )
 
-[Демо](https://1vank1n.github.io/bem-landing/ )
+Автор проект: [1vank1n](https://github.com/1vank1n )
 
 Ревьювер: [Николай Ильченко](https://ru.bem.info/authors/ilchenko-nikolay/ )
 
